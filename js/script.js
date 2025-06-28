@@ -66,7 +66,7 @@ function loadProducts(title, file) {
     });
 }
 
-// Kembali ke kategori
+// Kembali ke kategori tombol
 backBtn.onclick = () => {
   productSection.style.display = 'none';
   backBtn.style.display = 'none';
