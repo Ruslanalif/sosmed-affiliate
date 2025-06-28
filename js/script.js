@@ -1,6 +1,6 @@
 const categories = [
-  { name: "Peralatan Dapur", file: "peralatan_dapur.csv" },
-  { name: "Elektronik", file: "elektronik.csv" },
+  { name: "RUMAH", file: "rumah.csv" },
+  { name: "FASHHION", file: "fashion.csv" },
   // ... kategori lain jika ada
 ];
 
@@ -45,12 +45,12 @@ function loadProducts(title, file) {
 
         const detailDiv = document.createElement('div');
         detailDiv.classList.add('product-detail');
-        // <img src="assets/images/${gambar.trim()}" alt="${judul.trim()}" />
         
+        // <p>${deskripsi}</p>
+        // <img src="assets/images/blender.jpg" alt="${judul.trim()}" />
         detailDiv.innerHTML = `
-          <img src="assets/images/blender.jpg" alt="${judul.trim()}" />
-          <p>${deskripsi}</p>
-          <a href="${link}" target="_blank">🔗 Lihat Produk</a>
+        <img src="assets/images/${gambar.trim()}" alt="${judul.trim()}" />
+          <a href="${link}" target="_blank" style="color: #5b9cdc;"><i class="material-icons">attachment</i> Lihat Produk</a>
         `;
         item.appendChild(detailDiv);
 
